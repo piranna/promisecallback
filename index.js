@@ -35,7 +35,7 @@ function promiseCallback(promise, callback)
       }
     };
 
-    promise.then(callback2.bind(undefined, null), callback2);
+    promise = promise.then(callback2.bind(undefined, null), callback2);
   };
 
   return promise
