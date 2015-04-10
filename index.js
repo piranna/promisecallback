@@ -17,7 +17,7 @@
 /**
  * Define a callback as the continuation of a promise
  */
-function promiseCallback(promise, callback)
+function promiseCallback(promise, callback, thisArg)
 {
   if(callback)
   {
@@ -25,7 +25,7 @@ function promiseCallback(promise, callback)
     {
       try
       {
-        callback(error, result);
+        callback.call(thisArg, error, result);
       }
       catch(exception)
       {
