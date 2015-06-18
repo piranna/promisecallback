@@ -1,6 +1,6 @@
 {
   "name": "promisecallback",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Set a callback to be called by a promise",
   "main": "index.js",
   "scripts": {
